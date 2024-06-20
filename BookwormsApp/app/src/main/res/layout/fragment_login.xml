@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This XML layout file defines the UI for LoginFragment -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".LoginFragment">
+
+        <!-- LinearLayout to hold the content of the login fragment -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+                <!-- TextView for the login prompt -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Login For Full Experience!"
+                    android:padding="8dp"
+                    android:textSize="22sp"
+                    android:layout_marginTop="8dp"/>
+
+                <!-- EditText for the username input -->
+                <EditText
+                    android:id="@+id/login_username"
+                    android:layout_width="350dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="30dp"
+                    android:drawablePadding="8dp"
+                    android:hint="Username"
+                    android:padding="8dp"/>
+
+                <!-- EditText for the password input -->
+                <EditText
+                    android:id="@+id/login_password"
+                    android:layout_width="350dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:drawablePadding="8dp"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:padding="8dp" />
+
+                <!-- ImageView for showing/hiding the password -->
+                <ImageView
+                    android:id="@+id/imageView_show_hide_pwd"
+                    android:layout_width="33dp"
+                    android:layout_height="33dp"
+                    android:layout_marginLeft="147dp"
+                    android:layout_marginTop="-43dp" />
+
+                <!-- TextView for the forgot password dialog -->
+                <TextView
+                    android:id="@+id/forgot_pwd_redirect_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:padding="8dp"
+                    android:text="Forgot your password?"
+                    android:textColor="#337ab7"
+                    android:textSize="15sp" />
+
+                <!-- Button for logging in -->
+                <Button
+                    android:id="@+id/login_button"
+                    android:layout_width="220dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="12dp"
+                    android:text="Login"
+                    android:backgroundTint="#b97632"
+                    android:textSize="18sp" />
+
+        </LinearLayout>
+</ScrollView>

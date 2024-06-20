@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- Permissions the app requires -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/ic_app"
+        android:label="Bookworms"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BookwormsApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".ContactActivity"
+            android:exported="false" />
+        <!-- Activity declarations -->
+        <!-- Not exported, can't be launched by other apps -->
+        <activity
+            android:name=".AllCommentsActivity"
+            android:exported="false" /> <!-- Not exported, can't be launched by other apps -->
+        <activity
+            android:name=".ScoreboardActivity"
+            android:exported="false" /> <!-- Not exported, can't be launched by other apps -->
+        <activity
+            android:name=".FastTalkingActivity"
+            android:exported="false" /> <!-- Not exported, can't be launched by other apps -->
+        <activity
+            android:name=".FastTypingActivity"
+            android:exported="false" /> <!-- Not exported, can't be launched by other apps -->
+        <activity
+            android:name=".BookActivity"
+            android:exported="false" /> <!-- Not exported, can't be launched by other apps -->
+        <activity
+            android:name=".UserActivity"
+            android:exported="false" />
+        <!--
+ Exported, can be launched by other apps. For a launcher activity, it needs to be exported
+        because the launcher (which is a separate application) needs to be able to start this activity.
+        -->
+        <activity
+            android:name=".GuestActivity"
+            android:exported="true">
+            <intent-filter>
+
+                <!-- Declares the main entry point of the app -->
+                <action android:name="android.intent.action.MAIN" />
+
+                <!-- Makes the activity appearing in the device's app launcher -->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

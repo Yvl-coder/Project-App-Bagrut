@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This XML layout file defines the UI for LibraryFragment -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".LibraryFragment">
+
+    <!-- LinearLayout to hold the content of the library fragment -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="32dp"
+        android:orientation="vertical" >
+
+        <!-- TextView for the main message -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Here's the library, Enjoy!"
+            android:gravity="center_horizontal"
+            android:textSize="22sp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_gravity="center"/>
+
+        <!-- TextView for the instruction message -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To discover about a book that is interesting you, press on it!"
+            android:gravity="center_horizontal"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_gravity="center"/>
+
+        <!-- LinearLayout to hold the rows of books -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- LinearLayout for the first row of books -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <!-- ImageView for book 1 -->
+                <ImageView
+                    android:id="@+id/book1"
+                    android:layout_width="120dp"
+                    android:layout_height="190dp"
+                    android:src="@drawable/book1"
+                    android:clickable="true"
+                    android:focusable="true" />
+
+                <!-- Space between books -->
+                <Space
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent" />
+
+                <!-- ImageView for book 2 -->
+                <ImageView
+                    android:id="@+id/book2"
+                    android:layout_width="120dp"
+                    android:layout_height="190dp"
+                    android:src="@drawable/book2"
+                    android:clickable="true"
+                    android:focusable="true"/>
+            </LinearLayout>
+
+            <!-- LinearLayout for the second row of books -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <!-- ImageView for book 3 -->
+                <ImageView
+                    android:id="@+id/book3"
+                    android:layout_width="120dp"
+                    android:layout_height="190dp"
+                    android:src="@drawable/book3"
+                    android:clickable="true"
+                    android:focusable="true"/>
+
+                <!-- Space between books -->
+                <Space
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent" />
+
+                <!-- ImageView for book 4 -->
+                <ImageView
+                    android:id="@+id/book4"
+                    android:layout_width="120dp"
+                    android:layout_height="190dp"
+                    android:src="@drawable/book4"
+                    android:clickable="true"
+                    android:focusable="true"/>
+            </LinearLayout>
+
+            <!-- LinearLayout for the third row of books -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <!-- ImageView for book 5 -->
+                <ImageView
+                    android:id="@+id/book5"
+                    android:layout_width="120dp"
+                    android:layout_height="190dp"
+                    android:src="@drawable/book5"
+                    android:clickable="true"
+                    android:focusable="true"/>
+
+                <!-- Space between books -->
+                <Space
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent" />
+
+                <!-- ImageView for book 6 -->
+                <ImageView
+                    android:id="@+id/book6"
+                    android:layout_width="120dp"
+                    android:layout_height="190dp"
+                    android:src="@drawable/book6"
+                    android:clickable="true"
+                    android:focusable="true"/>
+            </LinearLayout>
+
+            <!-- LinearLayout for the fourth row of books -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <!-- ImageView for book 7 -->
+                <ImageView
+                    android:id="@+id/book7"
+                    android:layout_width="120dp"
+                    android:layout_height="190dp"
+                    android:src="@drawable/book7"
+                    android:clickable="true"
+                    android:focusable="true"/>
+
+                <!-- Space between books -->
+                <Space
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent" />
+
+                <!-- ImageView for book 8 -->
+                <ImageView
+                    android:id="@+id/book8"
+                    android:layout_width="120dp"
+                    android:layout_height="190dp"
+                    android:src="@drawable/book8"
+                    android:clickable="true"
+                    android:focusable="true"/>
+            </LinearLayout>
+
+            <!-- LinearLayout for the fifth row of books -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <!-- ImageView for book 9 -->
+                <ImageView
+                    android:id="@+id/book9"
+                    android:layout_width="120dp"
+                    android:layout_height="190dp"
+                    android:src="@drawable/book9"
+                    android:clickable="true"
+                    android:focusable="true"/>
+
+                <!-- Space between books -->
+                <Space
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent" />
+
+                <!-- ImageView for book 10 -->
+                <ImageView
+                    android:id="@+id/book10"
+                    android:layout_width="120dp"
+                    android:layout_height="190dp"
+                    android:src="@drawable/book10"
+                    android:clickable="true"
+                    android:focusable="true"/>
+            </LinearLayout>
+
+            <!-- LinearLayout for the sixth row of books -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <!-- ImageView for book 11 -->
+                <ImageView
+                    android:id="@+id/book11"
+                    android:layout_width="120dp"
+                    android:layout_height="190dp"
+                    android:src="@drawable/book11"
+                    android:clickable="true"
+                    android:focusable="true"/>
+
+                <!-- Space between books -->
+                <Space
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent" />
+
+                <!-- ImageView for book 12 -->
+                <ImageView
+                    android:id="@+id/book12"
+                    android:layout_width="120dp"
+                    android:layout_height="190dp"
+                    android:src="@drawable/book12"
+                    android:clickable="true"
+                    android:focusable="true"/>
+            </LinearLayout>
+
+            <!-- LinearLayout for the seventh row of books -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <!-- ImageView for book 13 -->
+                <ImageView
+                    android:id="@+id/book13"
+                    android:layout_width="120dp"
+                    android:layout_height="190dp"
+                    android:src="@drawable/book13"
+                    android:clickable="true"
+                    android:focusable="true"/>
+
+                <!-- Space between books -->
+                <Space
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent" />
+
+                <!-- ImageView for book 14 -->
+                <ImageView
+                    android:id="@+id/book14"
+                    android:layout_width="120dp"
+                    android:layout_height="190dp"
+                    android:src="@drawable/book14"
+                    android:clickable="true"
+                    android:focusable="true"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- LinearLayout for the eighth row of books -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <!-- ImageView for book 15 -->
+            <ImageView
+                android:id="@+id/book15"
+                android:layout_width="120dp"
+                android:layout_height="190dp"
+                android:src="@drawable/book15"
+                android:clickable="true"
+                android:focusable="true"/>
+
+            <!-- Space between books -->
+            <Space
+                android:layout_width="35dp"
+                android:layout_height="match_parent" />
+
+            <!-- ImageView for book 16 -->
+            <ImageView
+                android:id="@+id/book16"
+                android:layout_width="120dp"
+                android:layout_height="190dp"
+                android:src="@drawable/book16"
+                android:clickable="true"
+                android:focusable="true"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

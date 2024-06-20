@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This XML layout file defines the UI for the BookActivity -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff2c6"
+    tools:context=".BookActivity">
+
+    <!-- Toolbar for arrow back -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#f8e9d4" />
+
+    <!-- ScrollView to contain the content, allowing scrolling if needed -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:fillViewport="true" >
+
+        <!-- Linear layout to hold the content vertically -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:orientation="vertical">
+
+            <!-- TextView to display the book name -->
+            <TextView
+                android:id="@+id/book_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_gravity="center" />
+
+            <!-- ImageView to display the book cover -->
+            <ImageView
+                android:id="@+id/book_cover"
+                android:layout_width="233dp"
+                android:layout_height="336dp"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="32dp" />
+
+            <!-- TextView to display the summary title -->
+            <TextView
+                android:id="@+id/summary_title"
+                android:text="Summary:"
+                android:paddingTop="32dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:layout_marginStart="12dp"/>
+
+            <!-- TextView to display the book summary -->
+            <TextView
+                android:id="@+id/book_summary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="10dp"/>
+
+            <!-- TextView to display "Your Comment:" -->
+            <TextView
+                android:id="@+id/comment_text_view_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your Comment:"
+                android:textSize="22sp"
+                android:layout_marginStart="12dp"
+                android:paddingTop="32dp"
+                android:layout_marginEnd="16dp"/>
+
+            <!-- TextView to display previous comment -->
+            <TextView
+                android:id="@+id/previous_comment_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="10dp"/>
+
+            <!-- Linear layout to hold delete and edit comment options -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:paddingEnd="10dp">
+
+                <!-- TextView for deleting comment -->
+                <TextView
+                    android:id="@+id/delete_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:padding="8dp"
+                    android:text="Delete"
+                    android:textColor="#337ab7"
+                    android:textSize="14sp" />
+
+                <!-- Divider -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:padding="8dp"
+                    android:text="|"
+                    android:textSize="14sp" />
+
+                <!-- TextView for editing comment -->
+                <TextView
+                    android:id="@+id/edit_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:padding="8dp"
+                    android:text="Edit"
+                    android:textColor="#337ab7"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <!-- TextView for "Enter Comment:" -->
+            <TextView
+                android:id="@+id/comment_enter_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter Comment:"
+                android:textSize="22sp"
+                android:layout_marginStart="12dp"
+                android:paddingTop="32dp"
+                android:layout_marginEnd="16dp"/>
+
+            <!-- EditText for entering a new comment -->
+            <EditText
+                android:id="@+id/comment_edit_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="10dp"
+                android:hint="Enter your comment about the book..."
+                android:inputType="textMultiLine"/>
+
+            <!-- Linear layout to hold clear and save comment options -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:paddingEnd="10dp"
+                android:paddingBottom="10dp">
+
+                <!-- TextView for clearing comment -->
+                <TextView
+                    android:id="@+id/clear_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:padding="8dp"
+                    android:text="Clear"
+                    android:textColor="#337ab7"
+                    android:textSize="14sp" />
+
+                <!-- Divider -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:padding="8dp"
+                    android:text="|"
+                    android:textSize="14sp" />
+
+                <!-- TextView for saving comment -->
+                <TextView
+                    android:id="@+id/save_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:padding="8dp"
+                    android:text="Save"
+                    android:textColor="#337ab7"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <!-- Button to view all comments -->
+            <Button
+                android:id="@+id/view_all_comments_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View All Users Comment To This Book"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="#b97632"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

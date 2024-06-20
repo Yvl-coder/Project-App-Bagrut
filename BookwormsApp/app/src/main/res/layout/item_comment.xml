@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    This XML layout file defines the UI for a comment item with a username
+    and comment text for the AllCommentsActivity
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- LinearLayout to hold the username section with an icon and a text view -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="22dp" >
+
+        <!-- ImageView for the username icon -->
+        <ImageView
+            android:layout_width="22sp"
+            android:layout_height="22sp"
+            android:src="@drawable/ic_username_profile"
+            android:layout_gravity="center"/>
+
+        <!-- TextView to display the username -->
+        <TextView
+            android:id="@+id/username_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <!-- TextView to display the comment text which the user written -->
+    <TextView
+        android:id="@+id/comment_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginStart="46dp"
+        android:layout_marginEnd="10dp"/>
+
+</LinearLayout>

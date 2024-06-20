@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- This XML layout file defines the UI for the AboutFragment -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    tools:context=".AboutFragment" >
+
+    <!-- LinearLayout to hold the content -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingTop="32dp">
+
+        <!-- TextView for promoting the user to learn about the app -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Learn About The App!"
+            android:textSize="30sp" />
+
+        <!-- TextView for instruction -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="You can choose any question from the list below:"
+            android:textSize="25sp" />
+
+        <!-- Spinner for selecting questions -->
+        <Spinner
+            android:id="@+id/question_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:padding="16dp"
+            android:spinnerMode="dropdown"/>
+
+        <!-- TextView for displaying the answer for the question the user chose -->
+        <TextView
+            android:id="@+id/answer_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="45dp"
+            android:paddingRight="8dp"
+            android:text=""
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</ScrollView>

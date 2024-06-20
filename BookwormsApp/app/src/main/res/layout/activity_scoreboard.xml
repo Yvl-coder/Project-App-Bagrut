@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- This XML layout file defines the UI for the ScoreboardActivity -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff2c6"
+    tools:context=".ScoreboardActivity">
+
+    <!-- Toolbar for arrow back -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#f8e9d4" />
+
+    <!-- ScrollView to contain the content, allowing scrolling if needed -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:fillViewport="true" >
+
+        <!-- LinearLayout to hold the content -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <!-- TextView for header message -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_gravity="center"
+                android:text="Best of the Bests here!"
+                />
+
+            <!-- TextView for secondary header message -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_gravity="center"
+                android:text="Respect!"
+                />
+
+            <!-- TextView for Fast Typing Best Bookworm label -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="Fast Typing Best Bookworm:"
+                android:textSize="20sp" />
+
+            <!-- LinearLayout to hold icon + username for best performer in Fast Typing -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <!-- ImageView to display the icon pointing there is gonna be a username next to it -->
+                <ImageView
+                    android:id="@+id/ic_user_fast_typing"
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:src="@drawable/ic_username_profile"
+                    android:layout_gravity="center"
+                    android:visibility="gone" />
+
+                <!-- TextView to display the best performer in Fast Typing -->
+                <TextView
+                    android:id="@+id/fast_typing_best_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <!-- TextView to display the time for the best performer in Fast Typing -->
+            <TextView
+                android:id="@+id/time_fast_typing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp" />
+
+            <!-- TextView for Fast Talking Best Bookworm label -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fast_typing_best_textview"
+                android:layout_marginTop="30dp"
+                android:text="Fast Talking Best Bookworm:"
+                android:textSize="20sp"/>
+
+
+            <!-- LinearLayout to hold icon + username for best performer in Fast Talking -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <!-- ImageView to display the icon pointing there is gonna be a username next to it -->
+                <ImageView
+                    android:id="@+id/ic_user_fast_talking"
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:src="@drawable/ic_username_profile"
+                    android:layout_gravity="center"
+                    android:visibility="gone" />
+
+                <!-- TextView to display the best performer in Fast Talking -->
+                <TextView
+                    android:id="@+id/fast_talking_best_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+
+            <!-- TextView to display the time for the best performer in Fast Talking -->
+            <TextView
+                android:id="@+id/time_fast_talking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
