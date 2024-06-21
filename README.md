@@ -1,2 +1,3 @@
 The folder "BookwormsApp" contains the app project.
-The file "" contains explanation of the project.
+<br/>
+The file "ספר פרוייקט 5 יחל - יובל.pdf" contains explanation of the project.
